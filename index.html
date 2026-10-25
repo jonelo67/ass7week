@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Part 2 – JavaScript Practice (Tasks 6–10)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-head">
+    <h1>JavaScript practice</h1>
+    <p>Part 2, individual work. Student: <strong>Alibaeva Zhanel</strong>, group <strong>MT-2503</strong></p>
+    <nav aria-label="Tasks">
+      <a href="#task6">Task 6</a>
+      <a href="#task7">Task 7</a>
+      <a href="#task8">Task 8</a>
+      <a href="#task9">Task 9</a>
+      <a href="#task10">Task 10</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="task6" aria-labelledby="t6-title">
+      <h2 id="t6-title">Task 6. Counter with click events</h2>
+      <p class="counter-value" id="counter-value" aria-live="polite">0</p>
+      <div class="row">
+        <button type="button" id="btn-increase">Increase</button>
+        <button type="button" id="btn-decrease">Decrease</button>
+        <button type="button" id="btn-reset">Reset</button>
+      </div>
+    </section>
+
+
+    <section id="task7" aria-labelledby="t7-title">
+      <h2 id="t7-title">Task 7. Live text preview</h2>
+      <label for="preview-input">Your text</label>
+      <div class="row">
+        <input type="text" id="preview-input" autocomplete="off">
+        <button type="button" id="btn-clear">Clear</button>
+      </div>
+      <p>Preview:</p>
+      <p id="preview-text" class="preview empty">Your text will appear here</p>
+      <p>Characters: <strong id="char-count">0</strong></p>
+    </section>
+
+
+    <section id="task8" aria-labelledby="t8-title">
+      <h2 id="t8-title">Task 8. Change an image with a select control</h2>
+      <label for="image-select">Choose</label>
+      <select id="image-select">
+        <option value="burger" selected>Burger</option>
+        <option value="coch">Coch</option>
+        <option value="oi">Oi</option>
+      </select>
+      <figure>
+        <img id="img" src="images/burger.png" alt="A delicious burger" width="600" height="360">
+        <figcaption id="caption">Caption: Burger</figcaption>
+      </figure>
+    </section>
+
+
+    <section id="task9" aria-labelledby="t9-title">
+      <h2 id="t9-title">Task 9. Keyboard events</h2>
+      <form id="key-form" action="#">
+        <label for="key-input">Type here (Enter shows the text, Escape clears)</label>
+        <input type="text" id="key-input" autocomplete="off">
+      </form>
+      <p id="key-status">Status: no key pressed yet</p>
+      <p>Result: <output id="key-result" for="key-input">(empty)</output></p>
+    </section>
+
+
+    <section id="task10" aria-labelledby="t10-title">
+      <h2 id="t10-title">Task 10. Mouse and focus events</h2>
+      <div class="row card-row">
+        <div id="hover-card" class="card" tabindex="0">Interactive card</div>
+        <p id="card-instruction">Hover over the card or focus it with the Tab key.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
